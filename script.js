@@ -24,3 +24,19 @@ const buzzMultiple = 5;
 const fizzMessage = 'Fizz';
 const buzzMessage = 'Buzz';
 const bothMessage = 'FizzBuzz';
+
+//2.
+let message;
+
+for (let i = min; i <= max; i++) {
+  if (i % fizzMultiple === 0 && i % buzzMultiple === 0) {
+    message = bothMessage;
+  } else if (i % fizzMultiple === 0) {
+    message = fizzMessage;
+  } else if (i % buzzMultiple === 0) {
+    message = buzzMessage;
+  } else {
+    message = i;
+  }
+  console.log(message);
+}
